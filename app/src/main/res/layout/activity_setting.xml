@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_big_margin"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_change_pwd"
+            style="@style/commonstyle_black_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_transparent_bg"
+            android:padding="@dimen/common_big_margin"
+            android:text="@string/change_pwd" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_2" />
+
+        <TextView
+            android:id="@+id/tv_check_update"
+            style="@style/commonstyle_black_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_transparent_bg"
+            android:padding="@dimen/common_big_margin"
+            android:text="@string/check_update" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_2" />
+
+        <TextView
+            android:id="@+id/tv_clear_huancun"
+            style="@style/commonstyle_black_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_transparent_bg"
+            android:padding="@dimen/common_big_margin"
+            android:text="@string/clear_huancun" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_2" />
+
+        <TextView
+            android:id="@+id/tv_about_us"
+            style="@style/commonstyle_black_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_transparent_bg"
+            android:padding="@dimen/common_big_margin"
+            android:text="@string/about_us" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_2" />
+
+        <TextView
+            android:id="@+id/tv_feedback"
+            style="@style/commonstyle_black_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_transparent_bg"
+            android:padding="@dimen/common_big_margin"
+            android:text="@string/feedback" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_2" />
+
+        <TextView
+            android:id="@+id/tv_tuijianren"
+            style="@style/commonstyle_black_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_transparent_bg"
+            android:padding="@dimen/common_big_margin"
+            android:text="补填注册推荐人" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_2" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_big_margin"
+        android:background="@drawable/btn_yellow"
+        android:text="@string/exit" />
+
+    <TextView
+        android:id="@+id/setting_version"
+        style="@style/commonstyle_black_c"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:text="版本号:2.1.4"
+        android:gravity="bottom"
+        android:paddingRight="16dp" />
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F6F6F6"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:background="@color/red_title"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_gravity="bottom"
+            android:background="@drawable/layout_yellowbg_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="8dp">
+
+            <ImageView
+                android:id="@+id/search_back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:src="@mipmap/back"/>
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/tv_btnsearch"
+                android:layout_toRightOf="@id/search_back_iv"
+                android:background="@drawable/bg_laidian_main_search"
+                android:drawablePadding="4dp"
+                android:drawableRight="@mipmap/laidian_main_search"
+                android:hint="请输入关键字"
+                android:imeOptions="actionSearch"
+                android:textColor="@color/white"
+                android:textColorHint="@color/very_little_white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_btnsearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_sousuo_white"
+                android:text="搜索"
+                android:textColor="@color/half_white"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6">
+
+        <TextView
+            android:id="@+id/search_history_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="历史搜索记录为空"
+            android:textColor="#626262"/>
+
+        <TextView
+            android:id="@+id/search_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6F6F6"
+            android:padding="10dp"
+            android:text="大家都在搜"
+            android:textColor="#626262"/>
+
+        <FrameLayout
+            android:id="@+id/word_wrap_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_title"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <com.hclz.client.faxian.view.WordWrapView
+                android:id="@+id/word_wrap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.hclz.client.faxian.view.WordWrapView>
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/search_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/word_wrap_layout"
+            android:background="#F6F6F6"
+            android:padding="10dp"
+            android:text="搜索历史"
+            android:textColor="#626262"/>
+
+        <ListView
+            android:id="@+id/history_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_history"
+            ></ListView>
+
+        <TextView
+            android:id="@+id/search_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/history_list"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="清空搜索历史"
+            android:textColor="#626262"/>
+    </RelativeLayout>
+</LinearLayout>

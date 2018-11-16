@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="app_bar_height">75dp</dimen>
+    <dimen name="bind_hehuoren_menu_top">25dp</dimen>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 配置信息-->
+    <!-- BeeClound -->
+    <string name="beeclound_id">642290bf-9dc5-4362-a224-5f48064dbab4</string>
+    <!--正式版 f8691a98-41c9-4489-b349-74e82ef7113a-->
+    <!--测试版 642290bf-9dc5-4362-a224-5f48064dbab4-->
+
+    <string name="beeclound_secret">cd937625-fb1b-4c78-ae66-b47d54acb6d2</string>
+
+    <!--正式版 e02e3118-b483-423c-86e7-93169b731d04-->
+    <!--测试版 cd937625-fb1b-4c78-ae66-b47d54acb6d2-->
+
+    <!-- 微信 -->
+    <string name="wx_app_id">wx35b28d704912110f</string>
+    <!-- 百度地图 -->
+    <string name="baidu_api_key">nMyLFGs1ui86zRVw2rSGGHxx</string>
+    <!-- 百度移动统计 -->
+    <string name="BaiduMobAd_STAT_ID">9a03c92b49</string>
+    <!-- 客户正式2a11f0d4e8  测试9a03c92b49 -->
+    <string name="BaiduMobAd_CHANNEL">WanDouJia</string>
+
+    <!--服务器配置信息-->
+    <string name="config_file">config_dev.json</string>
+    <!--正式config_pro.json，测试config_dev.json-->
+    <string name="config_url">http://hclzpublicdev.oss-cn-hangzhou.aliyuncs.com/apps/1/hclz_android_dev.json</string>
+    <!--正式 http://hclzpublic.oss-cn-hangzhou.aliyuncs.com/apps/1/config_pro.json-->
+    <!--测试 http://hclzpublicdev.oss-cn-hangzhou.aliyuncs.com/apps/1/hclz_android_dev.json-->
+</resources>

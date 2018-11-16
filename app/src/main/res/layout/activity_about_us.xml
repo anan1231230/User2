@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/wv_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.tencent.smtt.sdk.WebView>
+</LinearLayout>

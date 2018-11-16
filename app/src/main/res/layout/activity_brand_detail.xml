@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.hclz.client.faxian.BrandDetailActivity">
+    <include
+        layout="@layout/common_title"
+        ></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 轮播图 -->
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.hclz.client.base.view.WrapContentHeightViewPager
+                    android:id="@+id/viPgr_carousel_figure"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/lLyt_Carousel_Figure_bottom_dot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/viPgr_carousel_figure"
+                    android:layout_marginTop="-6dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_brand_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e1e1e1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_brand_story"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@mipmap/right_raw"
+                        android:paddingLeft="10dp"
+                        android:text="品牌故事"
+                        android:textSize="@dimen/text_13"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_brand_story"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_brand_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@mipmap/right_raw"
+                        android:paddingLeft="10dp"
+                        android:text="装修设备"
+                        android:textSize="@dimen/text_13"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_brand_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:visibility="gone"
+                    android:fadeScrollbars="false"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_brand_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@mipmap/right_raw"
+                        android:paddingLeft="10dp"
+                        android:text="相关产品"
+                        android:textSize="@dimen/text_13"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_brand_product_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/ll_showorder_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light_grey"
+                android:gravity="center_vertical"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/common_margin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/commonstyle_b" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:background="@color/cyan"
+            android:gravity="center"
+            android:padding="@dimen/common_margin"
+            android:text="购物袋"
+            android:textColor="@color/white"
+            android:textSize="@dimen/commonstyle_b" />
+        <TextView
+            android:id="@+id/tv_change_address"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:background="@color/light_red"
+            android:gravity="center"
+            android:padding="@dimen/common_margin"
+            android:text="切换地址"
+            android:textColor="@color/white"
+            android:textSize="@dimen/commonstyle_b" />
+    </LinearLayout>
+</LinearLayout>

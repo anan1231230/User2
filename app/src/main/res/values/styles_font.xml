@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 黑色字体 -->
+    <style name="commonstyle_black">
+        <item name="android:textColor">#626262</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="commonstyle_black_a" parent="commonstyle_black">
+        <item name="android:textSize">@dimen/commonstyle_a</item>
+    </style>
+
+    <style name="commonstyle_black_b" parent="commonstyle_black">
+        <item name="android:textSize">@dimen/commonstyle_b</item>
+    </style>
+
+    <style name="commonstyle_black_c" parent="commonstyle_black">
+        <item name="android:textSize">@dimen/commonstyle_c</item>
+    </style>
+
+    <style name="commonstyle_black_d" parent="commonstyle_black">
+        <item name="android:textSize">@dimen/commonstyle_d</item>
+    </style>
+
+    <style name="commonstyle_black_e" parent="commonstyle_black">
+        <item name="android:textSize">@dimen/commonstyle_e</item>
+    </style>
+
+    <!-- 蓝色字体 -->
+    <style name="commonstyle_blue">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#2196f3</item>
+    </style>
+
+    <style name="commonstyle_blue_a" parent="commonstyle_blue">
+        <item name="android:textSize">@dimen/commonstyle_a</item>
+    </style>
+
+    <style name="commonstyle_blue_b" parent="commonstyle_blue">
+        <item name="android:textSize">@dimen/commonstyle_b</item>
+    </style>
+
+    <style name="commonstyle_blue_c" parent="commonstyle_blue">
+        <item name="android:textSize">@dimen/commonstyle_c</item>
+    </style>
+
+    <style name="commonstyle_blue_d" parent="commonstyle_blue">
+        <item name="android:textSize">@dimen/commonstyle_d</item>
+    </style>
+
+    <style name="commonstyle_blue_e" parent="commonstyle_blue">
+        <item name="android:textSize">@dimen/commonstyle_e</item>
+    </style>
+
+    <!-- 红色字体 -->
+    <style name="commonstyle_red">
+        <item name="android:textColor">#ed5b5c</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="commonstyle_red_a" parent="commonstyle_red">
+        <item name="android:textSize">@dimen/commonstyle_a</item>
+    </style>
+
+    <style name="commonstyle_red_b" parent="commonstyle_red">
+        <item name="android:textSize">@dimen/commonstyle_b</item>
+    </style>
+
+    <style name="commonstyle_red_c" parent="commonstyle_red">
+        <item name="android:textSize">@dimen/commonstyle_c</item>
+    </style>
+
+    <style name="commonstyle_red_d" parent="commonstyle_red">
+        <item name="android:textSize">@dimen/commonstyle_d</item>
+    </style>
+
+    <style name="commonstyle_red_e" parent="commonstyle_red">
+        <item name="android:textSize">@dimen/commonstyle_e</item>
+    </style>
+    <!-- 浅灰色字体 -->
+    <style name="commonstyle_grey">
+        <item name="android:textColor">#666666</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="commonstyle_grey_a" parent="commonstyle_grey">
+        <item name="android:textSize">@dimen/commonstyle_a</item>
+    </style>
+
+    <style name="commonstyle_grey_b" parent="commonstyle_grey">
+        <item name="android:textSize">@dimen/commonstyle_b</item>
+    </style>
+
+    <style name="commonstyle_grey_c" parent="commonstyle_grey">
+        <item name="android:textSize">@dimen/commonstyle_c</item>
+    </style>
+
+    <style name="commonstyle_grey_d" parent="commonstyle_grey">
+        <item name="android:textSize">@dimen/commonstyle_d</item>
+    </style>
+
+    <style name="commonstyle_grey_e" parent="commonstyle_grey">
+        <item name="android:textSize">@dimen/commonstyle_e</item>
+    </style>
+
+
+    <!-- 黄色字体 -->
+    <style name="commonstyle_yellow">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#f95c16</item>
+    </style>
+
+    <style name="commonstyle_yellow_a" parent="commonstyle_yellow">
+        <item name="android:textSize">@dimen/commonstyle_a</item>
+    </style>
+
+    <style name="commonstyle_yellow_b" parent="commonstyle_yellow">
+        <item name="android:textSize">@dimen/commonstyle_b</item>
+    </style>
+
+    <style name="commonstyle_yellow_c" parent="commonstyle_yellow">
+        <item name="android:textSize">@dimen/commonstyle_c</item>
+    </style>
+
+    <style name="commonstyle_yellow_d" parent="commonstyle_yellow">
+        <item name="android:textSize">@dimen/commonstyle_d</item>
+    </style>
+
+    <style name="commonstyle_yellow_e" parent="commonstyle_yellow">
+        <item name="android:textSize">@dimen/commonstyle_e</item>
+    </style>
+
+    <!-- 超级浅灰色字体 -->
+    <style name="commonstyle_grey_solight">
+        <item name="android:textColor">#dddddd</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="commonstyle_grey_solight_a" parent="commonstyle_grey_solight">
+        <item name="android:textSize">@dimen/commonstyle_a</item>
+    </style>
+
+    <style name="commonstyle_grey_solight_b" parent="commonstyle_grey_solight">
+        <item name="android:textSize">@dimen/commonstyle_b</item>
+    </style>
+
+    <style name="commonstyle_grey_solight_c" parent="commonstyle_grey_solight">
+        <item name="android:textSize">@dimen/commonstyle_c</item>
+    </style>
+
+    <style name="commonstyle_grey_solight_d" parent="commonstyle_grey_solight">
+        <item name="android:textSize">@dimen/commonstyle_d</item>
+    </style>
+
+    <style name="commonstyle_grey_solight_e" parent="commonstyle_grey_solight">
+        <item name="android:textSize">@dimen/commonstyle_e</item>
+    </style>
+
+    <!-- 白色字体 -->
+    <style name="commonstyle_white">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="commonstyle_white_a" parent="commonstyle_white">
+        <item name="android:textSize">@dimen/commonstyle_a</item>
+    </style>
+
+    <style name="commonstyle_white_b" parent="commonstyle_white">
+        <item name="android:textSize">@dimen/commonstyle_b</item>
+    </style>
+
+    <style name="commonstyle_white_c" parent="commonstyle_white">
+        <item name="android:textSize">@dimen/commonstyle_c</item>
+    </style>
+
+    <style name="commonstyle_white_d" parent="commonstyle_white">
+        <item name="android:textSize">@dimen/commonstyle_d</item>
+    </style>
+
+    <style name="commonstyle_white_e" parent="commonstyle_white">
+        <item name="android:textSize">@dimen/commonstyle_e</item>
+    </style>
+
+    <!-- 钱字体 -->
+    <style name="commonstyle_money">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/money</item>
+    </style>
+
+    <style name="commonstyle_money_a" parent="commonstyle_money">
+        <item name="android:textSize">@dimen/commonstyle_a</item>
+    </style>
+
+    <style name="commonstyle_money_b" parent="commonstyle_money">
+        <item name="android:textSize">@dimen/commonstyle_b</item>
+    </style>
+
+    <style name="commonstyle_money_c" parent="commonstyle_money">
+        <item name="android:textSize">@dimen/commonstyle_c</item>
+    </style>
+
+    <style name="commonstyle_money_d" parent="commonstyle_money">
+        <item name="android:textSize">@dimen/commonstyle_d</item>
+    </style>
+
+    <style name="commonstyle_money_e" parent="commonstyle_money">
+        <item name="android:textSize">@dimen/commonstyle_e</item>
+    </style>
+</resources>

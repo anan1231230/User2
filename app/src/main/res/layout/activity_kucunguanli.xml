@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fl_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_products"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray"
+                android:orientation="vertical">
+
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/swipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_products"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none" />
+                </android.support.v4.widget.SwipeRefreshLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="暂无库存"
+                android:visibility="gone" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

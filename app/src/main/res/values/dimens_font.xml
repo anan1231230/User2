@@ -1,0 +1,10 @@
+<resources>
+    <!-- 共通style -->
+    <dimen name="commonstyle_a">18sp</dimen>
+    <dimen name="commonstyle_b">16sp</dimen>
+    <dimen name="commonstyle_c">14sp</dimen>
+    <dimen name="commonstyle_d">12sp</dimen>
+    <dimen name="commonstyle_e">10sp</dimen>
+
+    <dimen name="commonstyle_big">24sp</dimen>
+</resources>

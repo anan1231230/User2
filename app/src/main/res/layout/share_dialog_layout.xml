@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/share_dialog_nulllayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/share_dialog_contentlayout"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/share_dialog_contentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:id="@+id/share_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#55CCCCCC">
+
+            <TextView
+                android:id="@+id/share_cannel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:text="取消分享"
+                android:textColor="#626262" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/share_iv_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/share_title"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/weicha_friend" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="微信好友"
+                android:textColor="#626262"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/share_iv_pyq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/share_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/share_iv_wx"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/friend_circle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="朋友圈"
+                android:textColor="#626262"
+                android:textSize="10sp" />
+        </LinearLayout>
+123123
+        <LinearLayout
+            android:id="@+id/share_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/share_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/share_iv_pyq"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/copy_share_url" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="复制连接"
+                android:textColor="#626262"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

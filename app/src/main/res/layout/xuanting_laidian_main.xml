@@ -1,0 +1,8 @@
+<!-- 轮播图 -->
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_types"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:background="#00ffffff"
+    android:choiceMode="singleChoice"
+    android:clipToPadding="false" />

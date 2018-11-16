@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title"
+        android:background="@color/light_yellow"
+        android:orientation="horizontal"
+        android:paddingLeft="48dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/icon_notice" />
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text=""
+            android:textColor="#646464"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_type2s"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:choiceMode="singleChoice"
+            android:clipToPadding="false"
+            android:paddingBottom="48dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_type3s"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".75"
+            android:background="@color/gray"
+            android:clipToPadding="false"
+            android:listSelector="@color/transparent"
+            android:paddingBottom="48dp" />
+    </LinearLayout>
+</LinearLayout>

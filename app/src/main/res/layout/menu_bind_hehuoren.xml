@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 等待Dialog -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bind_hehuoren_menu_top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_erweimasaomiao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/quater_black"
+            android:drawableLeft="@mipmap/ic_erweimasaomiao"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="二维码扫描"
+            android:textColor="@color/low_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/quater_black_line" />
+
+        <TextView
+            android:id="@+id/tv_shuruerweima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/quater_black"
+            android:drawableLeft="@mipmap/ic_shoudongshuru"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="输入推荐码"
+            android:textColor="@color/low_white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

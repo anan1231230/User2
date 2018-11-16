@@ -1,0 +1,20 @@
+<!-- 轮播图 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.hclz.client.faxian.view.WrapContentHeightViewPager
+        android:id="@+id/viPgr_carousel_figure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.hclz.client.faxian.view.WrapContentHeightViewPager>
+
+    <LinearLayout
+        android:id="@+id/lLyt_Carousel_Figure_bottom_dot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viPgr_carousel_figure"
+        android:layout_marginTop="-16dp"
+        android:paddingRight="16dp"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"></LinearLayout>
+</RelativeLayout>

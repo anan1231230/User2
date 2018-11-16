@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/red_title"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="24dp">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:src="@mipmap/back" />
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_toLeftOf="@+id/iv_btntuijianma"
+                    android:layout_toRightOf="@id/iv_back"
+                    android:background="@drawable/bg_bind_search"
+                    android:drawablePadding="4dp"
+                    android:drawableRight="@mipmap/laidian_main_search"
+                    android:hint="请输入关键字"
+                    android:imeOptions="actionSearch"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/very_little_white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_hehuoren"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:listSelector="@color/transparent"
+                            android:scrollbars="none" />
+
+                        <TextView
+                            android:id="@+id/tv_empty"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="暂无合伙人"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+</RelativeLayout>

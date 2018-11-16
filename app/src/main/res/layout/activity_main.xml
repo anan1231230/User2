@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/father"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fl_bottom">
+
+        <RelativeLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom" />
+
+        <include
+            android:id="@+id/network_err"
+            layout="@layout/default_networkerr" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RadioGroup
+            android:id="@+id/rdoGrp_tab_menu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_bottom_size"
+            android:alpha="90"
+            android:background="@color/gray"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdoBtn_tab_mall"
+                style="@style/commonstyle_black_c"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_kitchen_selector"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingTop="@dimen/common_margin"
+                android:text="首页"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/rdoBtn_tab_haiwai"
+                style="@style/commonstyle_black_c"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_mall_selector"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingTop="@dimen/common_margin"
+                android:text="发现"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/rdoBtn_tab_order"
+                style="@style/commonstyle_black_c"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_order_selector"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingTop="@dimen/common_margin"
+                android:text="@string/order"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/rdoBtn_tab_me"
+                style="@style/commonstyle_black_c"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_me_selector"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingTop="@dimen/common_margin"
+                android:text="@string/me"
+                android:textSize="10sp" />
+
+        </RadioGroup>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ll_top"
+        layout="@layout/common_title" />
+
+    <EditText
+    android:id="@+id/et_tuijianma"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ll_top"
+    android:layout_margin="16dp"
+    android:gravity="center"
+    android:inputType="number"
+    android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_cshop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <com.hclz.client.base.view.CircleImageView
+            android:id="@+id/tuijianma_head_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/perm_pic" />
+
+        <TextView
+            android:id="@+id/tuijianma_hehuoren_name"
+            style="@style/commonstyle_black_b"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tuijianma_hehuoren_phone"
+            style="@style/commonstyle_black_d"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tuijianma_hehuoren_address"
+            style="@style/commonstyle_black_d"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/tuijianma_user_lllayout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.hclz.client.base.view.CircleImageView
+                android:id="@+id/tuijianma_head_pic_user"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="8dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/perm_pic" />
+
+            <TextView
+                android:id="@+id/tuijianma_hehuoren_name_user"
+                style="@style/commonstyle_black_b"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tuijianma_hehuoren_phone_user"
+                style="@style/commonstyle_black_d"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn_yellow"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="绑定" />
+</LinearLayout>

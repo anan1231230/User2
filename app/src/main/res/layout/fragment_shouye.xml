@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:background="@color/red_title">
+
+        <ImageView
+            android:id="@+id/notification_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:src="@mipmap/ic_main_shouye_xiaoxi"/>
+
+        <TextView
+            style="@style/commonstyle_white_a"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="首页"/>
+
+        <ImageView
+            android:id="@+id/iv_cart"
+            android:layout_width="50dp"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:padding="15dp"
+            android:src="@mipmap/ic_main_shouye_cart"/>
+
+        <ImageView
+            android:id="@+id/notification_dot_iv"
+            android:layout_width="@dimen/notification_dot_size"
+            android:layout_height="@dimen/notification_dot_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/iv_cart"
+            android:layout_marginRight="@dimen/notification_dot_margin"
+            android:layout_marginTop="@dimen/notification_dot_margin"
+            android:background="@drawable/red_dot"/>
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="50dp"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/iv_cart"
+            android:padding="15dp"
+            android:src="@mipmap/ic_main_shouye_search"/>
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/app_bar_height">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_products"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2"></android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</android.support.design.widget.CoordinatorLayout>

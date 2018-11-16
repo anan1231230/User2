@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <TextView
+                android:id="@+id/tv_miaosha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/red_title"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp"
+                android:text="秒杀"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_miaosha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/half_black"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_julikaishiorjieshu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="距离开始："
+                    android:textColor="@color/white"
+                    android:textSize="8sp"
+
+                    />
+
+                <cn.iwgang.countdownview.CountdownView
+                    android:id="@+id/tv_miaosha_shijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/white"
+                    android:textSize="8sp"
+                    app:isHideTimeBackground="true"
+                    app:isShowDay="true"
+                    app:isShowHour="true"
+                    app:isShowMillisecond="true"
+                    app:isShowMinute="true"
+                    app:isShowSecond="true"
+                    app:isTimeTextBold="false"
+                    app:suffixDay="天 "
+                    app:suffixGravity="center"
+                    app:suffixHour=":"
+                    app:suffixMillisecond=""
+                    app:suffixMinute=":"
+                    app:suffixSecond=":"
+                    app:suffixTextColor="@color/white"
+                    app:suffixTextSize="8sp"
+                    app:timeTextColor="@color/white"
+                    app:timeTextSize="8sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/perm_pic" />
+
+            <ImageView
+                android:id="@+id/iv_quehuo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="24dp"
+                android:src="@mipmap/ic_yiqiangguang" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/commonstyle_black_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:paddingLeft="@dimen/common_margin"
+            android:paddingRight="@dimen/common_margin"
+            android:paddingTop="@dimen/common_margin"
+            android:singleLine="false"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/commonstyle_money_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_margin" />
+
+            <TextView
+                android:id="@+id/tv_price_previous"
+                style="@style/commonstyle_grey_solight_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_margin" />
+
+            <RelativeLayout
+                android:id="@+id/rl_cart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+
+                >
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@mipmap/ic_cart" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

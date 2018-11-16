@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:background="@color/red_title"
+        android:paddingRight="8dp">
+
+        <ImageView
+            android:id="@+id/iv_comm_head_left"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:paddingRight="15dp"
+            android:src="@mipmap/back"/>
+
+        <TextView
+            android:id="@+id/product_title"
+            style="@style/commonstyle_white_a"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center"
+            android:text="产品"/>
+
+    </android.support.v7.widget.Toolbar>
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_bar_states" >
+    </ProgressBar>
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/wv_wenzhang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.tencent.smtt.sdk.WebView>
+</LinearLayout>

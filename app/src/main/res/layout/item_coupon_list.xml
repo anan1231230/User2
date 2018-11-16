@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/common_margin"
+    android:background="@mipmap/icon_biglottery"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_weight=".3">
+        <!-- 代金券 -->
+        <LinearLayout
+            android:id="@+id/ll_daijin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/commonstyle_red_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:gravity="center"
+                android:text="￥" />
+
+            <TextView
+                android:id="@+id/tv_coupon_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/red"
+                android:textSize="24sp" />
+        </LinearLayout>
+        <!-- 打折卡 -->
+        <LinearLayout
+            android:id="@+id/ll_dazhe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_coupon_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/red"
+                android:textSize="24sp" />
+
+            <TextView
+                style="@style/commonstyle_red_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="折卡" />
+        </LinearLayout>
+        <!-- 满减卡 -->
+        <LinearLayout
+            android:id="@+id/ll_manjian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/commonstyle_red_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:gravity="center"
+                    android:text="满" />
+
+                <TextView
+                    android:id="@+id/tv_coupon_minpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="50"
+                    android:textColor="@color/red"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/commonstyle_red_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:gravity="center"
+                    android:text="减" />
+
+                <TextView
+                    android:id="@+id/tv_coupon_cutpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/red"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_weight=".7"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_desc1"
+            style="@style/commonstyle_black_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:singleLine="false"
+            android:text="满20元可用" />
+
+        <TextView
+            android:id="@+id/tv_desc2"
+            style="@style/commonstyle_black_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:singleLine="false"
+            android:text="限尾号8020的手机使用" />
+
+        <TextView
+            android:id="@+id/tv_expire"
+            style="@style/commonstyle_black_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:singleLine="false"
+            android:text="2015-10-08至2015-10-09" />
+    </LinearLayout>
+
+
+</LinearLayout>

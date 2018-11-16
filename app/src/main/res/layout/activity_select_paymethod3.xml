@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#feffea"
+            android:orientation="horizontal"
+            android:padding="@dimen/common_big_margin">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="@string/order_price"
+                android:textColor="@color/light_pink" />
+
+            <TextView
+                android:id="@+id/tv_order_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:textColor="@color/light_pink" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/commonstyle_black_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_margin"
+            android:text="@string/pay_method_txt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_1" />
+
+        <RadioGroup
+            android:id="@+id/rg_pay_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/common_margin">
+
+            <RadioButton
+                android:id="@+id/rb_zhifubao"
+                style="@style/commonstyle_black_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@mipmap/icon_alipay"
+                android:drawablePadding="@dimen/common_big_margin"
+                android:drawableRight="@drawable/delivery_selector"
+                android:padding="@dimen/common_margin"
+                android:text="@string/alipay" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_1" />
+
+            <RadioButton
+                android:id="@+id/rb_weixin"
+                style="@style/commonstyle_black_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@mipmap/icon_2wechat"
+                android:drawablePadding="@dimen/common_big_margin"
+                android:drawableRight="@drawable/delivery_selector"
+                android:padding="@dimen/common_margin"
+                android:text="@string/wechat" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/common_small_margin"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin"
+            android:background="@drawable/btn_yellow"
+            android:gravity="center"
+            android:text="@string/ok" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context="com.hclz.client.faxian.CartActivity">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/common_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_layout"
+        android:layout_marginBottom="48dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_layout"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/ll_haimaile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="9.5dp"
+                android:background="@color/gray"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="16.5dp"
+                    android:background="@color/red" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="其他用户还购买了"
+                    android:textColor="@color/gray_3"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_cainixihuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9.5dp"
+                android:paddingBottom="48dp"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/cart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/money_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="合计:"
+            android:textColor="#626262"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cart_totle_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/money_left_tv"
+            android:gravity="center"
+            android:text="￥3958"
+            android:textColor="#B0332A"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#A82722"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="去结算"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/empty_cart" />
+</RelativeLayout>

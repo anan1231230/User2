@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/detail_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:background="@color/red_title">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="50dp"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_alignParentBottom="true"
+            android:padding="15dp"
+
+            android:src="@mipmap/back" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="50dp"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/iv_cart"
+            android:padding="15dp"
+            android:src="@mipmap/share" />
+
+        <ImageView
+            android:id="@+id/iv_cart"
+            android:layout_width="50dp"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:src="@mipmap/ic_main_shouye_cart" />
+
+        <ImageView
+            android:id="@+id/notification_dot_iv"
+            android:layout_width="@dimen/notification_dot_size"
+            android:layout_height="@dimen/notification_dot_size"
+            android:layout_alignRight="@id/iv_cart"
+            android:layout_alignTop="@id/iv_cart"
+            android:layout_marginRight="@dimen/notification_dot_margin"
+            android:layout_marginTop="@dimen/notification_dot_margin"
+            android:background="@drawable/red_dot" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="100dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/commonstyle_a" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_showorder_layout"
+        android:layout_below="@+id/detail_bar"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_sub_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_bar"
+                android:background="@color/gray"></android.support.v7.widget.RecyclerView>
+
+            <com.tencent.smtt.sdk.WebView
+                android:id="@+id/wv_product_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.tencent.smtt.sdk.WebView>
+            <ImageView
+                android:id="@+id/pic_invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_showorder_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/light_grey"
+                android:padding="8dp"
+                android:text="单价:"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.81"
+                android:background="@color/light_grey"
+                android:gravity="center_vertical"
+                android:padding="@dimen/common_margin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/commonstyle_b" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:background="@color/cyan"
+            android:gravity="center"
+            android:padding="@dimen/common_margin"
+            android:text="购物袋"
+            android:textColor="@color/white"
+            android:textSize="@dimen/commonstyle_b" />
+
+        <TextView
+            android:id="@+id/tv_add_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:background="@color/light_red"
+            android:gravity="center"
+            android:padding="@dimen/common_margin"
+            android:text="加购物袋"
+            android:textColor="@color/white"
+            android:textSize="@dimen/commonstyle_b" />
+    </LinearLayout>
+</RelativeLayout>

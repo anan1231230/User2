@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_recentlyused"
+            android:drawablePadding="5dp"
+            android:padding="@dimen/common_margin"
+            android:text="搜索结果" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <com.hclz.client.base.view.CircleImageView
+                android:id="@+id/img_logo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="@dimen/common_margin"
+                android:padding="8dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/perm_pic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_name"
+                style="@style/commonstyle_black_b"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:text="名士豪庭店"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_phone"
+                style="@style/commonstyle_black_d"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="0531-89856542" />
+
+            <TextView
+                android:id="@+id/txt_address"
+                style="@style/commonstyle_black_d"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="济南市历下区经十路名士豪庭一期A-10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_juli"
+                style="@style/commonstyle_grey_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="5.30km" />
+
+            <TextView
+                android:id="@+id/txt_xiaoliang"
+                style="@style/commonstyle_grey_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_huodong_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:background="@color/line_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common_small_margin"
+                android:layout_marginTop="@dimen/common_small_margin"
+                android:layout_weight="0.7"
+                android:orientation="vertical">
+
+                <com.hclz.client.base.view.MyListView
+                    android:id="@+id/lv_huodong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:focusable="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

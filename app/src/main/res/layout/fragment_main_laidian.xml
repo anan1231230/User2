@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:background="@color/red_title"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:id="@+id/tv_select_location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableRight="@mipmap/down_white"
+                android:gravity="center"
+                android:text="潍坊"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_toLeftOf="@+id/tv_btnsearch"
+                android:layout_toRightOf="@id/tv_select_location"
+                android:background="@drawable/bg_laidian_main_search"
+                android:drawablePadding="4dp"
+                android:drawableRight="@mipmap/laidian_main_search"
+                android:hint="请输入关键字"
+                android:imeOptions="actionSearch"
+                android:textColor="@color/white"
+                android:textColorHint="@color/very_little_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_btnsearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_sousuo_white"
+                android:text="搜索"
+                android:textColor="@color/half_white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_types1"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@+id/ll_bar"
+        android:background="#00ffffff"
+        android:choiceMode="singleChoice"
+        android:clipToPadding="false"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rv_types1">
+
+        <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/fl_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rl_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v4.widget.SwipeRefreshLayout
+                        android:id="@+id/swipe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/product_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:listSelector="@android:color/transparent"
+                            android:scrollbars="none" />
+                    </android.support.v4.widget.SwipeRefreshLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/product_empty"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_default"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fafafa"
+            android:gravity="center"
+            android:padding="24dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您(或您的同学)所在校区暂未开通服务，如想成为该校区合伙人，请联系我们客服"
+                android:textColor="@color/half_black" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

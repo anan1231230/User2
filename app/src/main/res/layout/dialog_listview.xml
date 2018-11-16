@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="@dimen/common_big_margin"
+        android:gravity="center"
+        android:text="@string/select_coupon"
+        android:textSize="@dimen/commonstyle_big" />
+
+    <ListView
+        android:id="@+id/lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="@dimen/common_margin">
+
+    </ListView>
+
+</LinearLayout>

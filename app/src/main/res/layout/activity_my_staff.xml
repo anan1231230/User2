@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray">
+
+    <include
+        android:id="@+id/lay_top"
+        layout="@layout/common_title" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_top"
+        android:layout_above="@+id/ll_add_staff"
+        >
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:id="@+id/ll_add_staff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layout_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/common_big_margin">
+
+        <TextView
+            style="@style/commonstyle_red_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/btn_2add"
+            android:drawablePadding="@dimen/common_small_margin"
+            android:text="@string/add_staff" />
+    </LinearLayout>
+
+</RelativeLayout>

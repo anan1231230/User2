@@ -1,0 +1,131 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin">
+
+                <TextView
+                    style="@style/commonstyle_black_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:text="@string/staff_name"/>
+
+                <EditText
+                    android:id="@+id/staff_name"
+                    style="@style/commonstyle_black_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:background="@null"
+                    android:padding="@dimen/common_margin"/>
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin">
+
+                <TextView
+                    style="@style/commonstyle_black_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:text="@string/zhiwei"/>
+
+                <EditText
+                    android:id="@+id/staff_job"
+                    style="@style/commonstyle_black_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:background="@null"
+                    android:padding="@dimen/common_margin"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin">
+
+                <TextView
+                    style="@style/commonstyle_black_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:text="@string/contact_phone"/>
+
+                <EditText
+                    android:id="@+id/staff_phonenum"
+                    style="@style/commonstyle_black_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:padding="@dimen/common_margin"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:background="@color/line_2"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_1"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin"
+            android:background="@drawable/btn_yellow"
+            android:text="@string/ok"/>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+

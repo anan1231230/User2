@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e1e1"
+    android:orientation="vertical"
+    tools:context="com.hclz.client.faxian.BrandListActivity">
+    <include
+        layout="@layout/common_title"></include>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/ll_brand_list"
+    >
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:dividerHeight="5dp"
+    android:id="@+id/lv_brand_list"
+    >
+
+</ListView>
+
+</LinearLayout>
+</LinearLayout>

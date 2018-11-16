@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/icon_success" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/tips" />
+
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/common_margin"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin"
+            android:layout_weight=".5"
+            android:background="@drawable/btn_gray"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin"
+            android:layout_weight=".5"
+            android:background="@drawable/btn_red"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/ok"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

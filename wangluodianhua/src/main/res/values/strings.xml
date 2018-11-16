@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="action_settings">充值</string>
+    <!--英特讯网络电话网址数据-->
+    <!--YingTeXunInfo.registerUrl = getString(R.string.yingtexun_register_url);-->
+    <!--YingTeXunInfo.callUrl = getString(R.string.yingtexun_call_url);-->
+    <!--YingTeXunInfo.rechargeUrl = getString(R.string.yingtexun_recharge_url);-->
+    <!--YingTeXunInfo.qureyBalanceUrl = getString(R.string.yingtexun_querybalance_url);-->
+    <!--YingTeXunInfo.angentId = getString(R.string.yingtexun_agent_id);-->
+    <string name="yingtexun_register_url">http://mob.doda.net.cn:8899/reg</string>
+    <string name="yingtexun_call_url">http://mob.doda.net.cn:8899/call</string>
+    <string name="yingtexun_recharge_url">http://pay.doda.net.cn/recharge/service/easypay.php</string>
+    <string name="yingtexun_querybalance_url">http://mob.doda.net.cn:8899/search_balance</string>
+    <string name="yingtexun_agent_id">44</string>
+</resources>

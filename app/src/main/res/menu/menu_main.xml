@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_search"
+        android:title="搜索"
+        android:orderInCategory="80"
+        android:icon="@mipmap/ic_main_shouye_search"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_cart"
+        android:title="购物车"
+        android:orderInCategory="90"
+        android:icon="@mipmap/ic_main_shouye_cart"
+        app:showAsAction="ifRoom" />
+</menu>

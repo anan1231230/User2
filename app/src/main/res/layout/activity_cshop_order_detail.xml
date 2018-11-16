@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ll_title"
+        layout="@layout/common_title" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_product_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/tv_title_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:text="名称"
+            android:textColor="#323232"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_title_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="数量"
+            android:textColor="#323232"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_product_title"
+        android:background="@color/gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_contact_panel"
+        android:layout_below="@id/line">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ll_contact_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_detail_info"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_contact_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/contact_phone_selector"
+                android:padding="8dp"
+                android:src="@mipmap/ic_contact_phone" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_contact_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/contact_map_selector"
+                android:padding="8dp"
+                android:src="@mipmap/ic_contact_map" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_detail_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/secondary_text_dark" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/secondary_text_dark" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/secondary_text_dark" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/secondary_text_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_quehuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/sms_verify_button"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:text="缺货" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/sms_verify_button"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:text="接单" />
+    </LinearLayout>
+
+</RelativeLayout>

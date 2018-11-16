@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <EditText
+        android:id="@+id/et_nicheng"
+        style="@style/commonstyle_black_d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@color/white"
+        android:hint="@string/new_nicheng"
+        android:padding="@dimen/common_big_margin" />
+
+</LinearLayout>

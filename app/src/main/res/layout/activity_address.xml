@@ -1,0 +1,235 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin">
+
+                <TextView
+                    style="@style/commonstyle_black_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:text="@string/contact_person"/>
+
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/commonstyle_black_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:background="@null"
+                    android:padding="@dimen/common_margin"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin">
+
+                <TextView
+                    style="@style/commonstyle_black_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:text="@string/contact_phone"/>
+
+                <EditText
+                    android:id="@+id/et_phonenum"
+                    style="@style/commonstyle_black_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:padding="@dimen/common_margin"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin">
+
+                <TextView
+                    style="@style/commonstyle_black_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:text="@string/address"/>
+
+                <TextView
+                    android:id="@+id/et_address"
+                    style="@style/commonstyle_black_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:background="@null"
+                    android:hint="选择省市区"
+                    android:padding="@dimen/common_margin"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:background="@color/line_2"/>
+
+            <ListView
+                android:id="@+id/lv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin">
+
+                <TextView
+                    style="@style/commonstyle_black_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"/>
+
+                <EditText
+                    android:id="@+id/et_address_detail"
+                    style="@style/commonstyle_black_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:background="@null"
+                    android:hint="@string/input_address_hint"
+                    android:padding="@dimen/common_margin"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin">
+
+                <TextView
+                    android:id="@+id/tv_pwd"
+                    style="@style/commonstyle_black_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:hint="@string/set_default"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:gravity="right">
+                    <!-- <RadioButton
+                        android:id="@+id/rb_moren"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/common_margin"
+                        android:button="@null"
+                        android:background="@drawable/btn_slide"/> -->
+                    <ImageView
+                        android:id="@+id/iv_moren"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/common_margin"
+                        android:background="@mipmap/btn_slide"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin"
+            android:background="@drawable/btn_yellow"
+            android:text="@string/ok"/>
+
+    </LinearLayout>
+
+    <!--<android.support.v4.widget.NestedScrollView-->
+        <!--android:id="@+id/scroll"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#33000000"-->
+        <!--app:behavior_hideable="true"-->
+        <!--app:behavior_peekHeight="0dp"-->
+        <!--app:layout_behavior="@string/bottom_sheet_behavior">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:background="@color/white">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/city_select_cannel"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="10dp"-->
+                <!--android:text="取消"-->
+                <!--android:textColor="#626262"-->
+                <!--android:textSize="14dp"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/city_select_sure"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:padding="10dp"-->
+                <!--android:text="确定"-->
+                <!--android:textColor="#626262"-->
+                <!--android:textSize="14dp"/>-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="300dp"-->
+                <!--android:layout_below="@id/city_select_sure">-->
+
+                <!---->
+            <!--</FrameLayout>-->
+
+        <!--</RelativeLayout>-->
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+</android.support.design.widget.CoordinatorLayout>
+

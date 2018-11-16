@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_haoma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/delete"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/haoma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/colorAccent"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@mipmap/ic_call" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_below="@id/ll_haoma"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_search"
+        android:drawablePadding="4dp"
+        android:drawableRight="@mipmap/search"
+        android:hint="请输入关键字"
+        android:imeOptions="actionSearch"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="12sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edt_search"
+        android:background="@color/gray"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/dialog"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_gravity="center"
+        android:background="@drawable/sidebar_background"
+        android:layout_centerInParent="true"
+        android:textColor="@color/cyan"
+        android:textSize="30.0dip"
+        android:visibility="invisible" />
+
+    <com.merben.wangluodianhua.slideabc.SideBar
+        android:id="@+id/sidrbar"
+        android:layout_below="@id/edt_search"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="match_parent" />
+</RelativeLayout>

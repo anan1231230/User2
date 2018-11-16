@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="VIEWTYPE_EMPTY" type="id" />
+    <item name="VIEWTYPE_NORMAL" type="id" />
+    <item name="VIEWTYPE_TITLE" type="id" />
+
+</resources>

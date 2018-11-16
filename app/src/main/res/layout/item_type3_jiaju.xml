@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:gravity="center"
+    android:paddingTop="20dp"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_above="@+id/tv_name"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/commonstyle_black_d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp"
+        android:text="矿泉水"
+        android:textColor="#5a5a5a" />
+</LinearLayout>

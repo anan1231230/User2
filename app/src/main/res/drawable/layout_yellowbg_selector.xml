@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <!--<item android:drawable="@color/light_red_title" android:state_pressed="true" />-->
+    <!--<item android:drawable="@color/light_red_title" android:state_checked="true" />-->
+    <!--<item android:drawable="@color/red_title" />-->
+    <!--<item android:drawable="@color/half_black" android:state_pressed="true" />-->
+    <!--<item android:drawable="@color/half_black" android:state_checked="true" />-->
+    <!--<item android:drawable="@color/transparent" />-->
+</selector>

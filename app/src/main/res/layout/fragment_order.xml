@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:id="@+id/lay_top"
+        android:background="@color/red_title"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_comm_head_left"
+                android:layout_width="@dimen/actionbar_height"
+                android:layout_height="@dimen/actionbar_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/layout_yellowbg_selector"
+                android:gravity="center"
+                android:onClick="ButtonBackClick"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:src="@mipmap/back"
+                android:textSize="@dimen/commonstyle_b"
+                android:visibility="visible"/>
+
+
+            <TextView
+                android:id="@+id/tv_comm_head_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/commonstyle_a"/>
+
+            <!-- <ImageView
+                    android:id="@+id/imgView_head_triangle"
+                    android:layout_toRightOf="@id/txt_comm_head_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    android:background="@drawable/sanjiao_xia"/> -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/tv_order_record"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/commonstyle_b"
+                    android:gravity="center"
+                    android:text="购买历史"
+                    android:singleLine="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/commonstyle_b"
+                    />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay_top"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:smoothScrollbar="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_orders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:scrollbars="none"
+            android:divider="@null"></android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_null_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay_top"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_margin"
+            android:gravity="center"
+            android:text="@string/no_order" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_big_margin"
+            android:gravity="center"
+            android:text="@string/no_order_desc" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_yellow"
+            android:paddingLeft="@dimen/common_big_margin"
+            android:paddingRight="@dimen/common_big_margin"
+            android:text="@string/no_login" />
+    </LinearLayout>
+
+</RelativeLayout>

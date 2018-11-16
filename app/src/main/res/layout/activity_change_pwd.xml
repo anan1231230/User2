@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        style="@style/login_regist_wrap"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_newpwd"
+            style="@style/login_psw_text"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/shape_input_bottom"
+            android:hint="请输入新密码"
+            android:imeActionLabel="完成"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword" />
+
+        <TextView
+            style="@style/commonstyle_red_d"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_margin"
+            android:text="@string/new_pwd_format" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/login_btn"
+            android:layout_marginTop="24dip"
+            android:layout_weight="1"
+            android:background="@drawable/shape_btn_login"
+            android:gravity="center"
+            android:text="完 成" />
+    </LinearLayout>
+</LinearLayout>

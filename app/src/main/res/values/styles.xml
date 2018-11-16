@@ -1,0 +1,270 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+        <!--&lt;!&ndash; <item name="android:windowBackground">@color/transparent</item> &ndash;&gt;-->
+        <!--<item name="android:windowIsTranslucent">false</item>-->
+        <!--&lt;!&ndash;<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>&ndash;&gt;-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:activityOpenEnterAnimation">@null</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@null</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@null</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@null</item>-->
+        <!--<item name="android:taskOpenEnterAnimation">@null</item>-->
+        <!--<item name="android:taskOpenExitAnimation">@null</item>-->
+        <!--<item name="android:taskCloseEnterAnimation">@null</item>-->
+        <!--<item name="android:taskCloseExitAnimation">@null</item>-->
+        <!--<item name="android:taskToFrontEnterAnimation">@null</item>-->
+        <!--<item name="android:taskToFrontExitAnimation">@null</item>-->
+        <!--<item name="android:taskToBackEnterAnimation">@null</item>-->
+        <!--<item name="android:taskToBackExitAnimation">@null</item>-->
+    </style>
+
+    <style name="Dialog_FS">
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="dialog" parent="AppBaseTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="mydialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_out</item>
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="Dialog_Fullscreen" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+
+        <!--<item name="colorPrimary">@color/red_title</item>-->
+        <!--<item name="colorPrimaryDark">@color/red_title</item>-->
+        <!--<item name="colorAccent">@color/red_title</item>-->
+    </style>
+
+    <style name="nofullscreen" parent="AppTheme.NoActionBar2">
+        <item name="android:windowBackground">@drawable/platformbackground</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="GridPasswordView"/>
+
+    <style name="GridPasswordView.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="GridPasswordView.EditText" parent="GridPasswordView.TextView">
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+    <style name="GridPasswordView.Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+    <style name="drawerTop">
+        <item name="android:layout_marginTop">25dp</item>
+    </style>
+
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popwindows_right_in</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/popwindows_right_out</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="AppTheme.NoActionBar2.AppBarOverlay"
+           parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.NoActionBar2.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <!-- 我的界面 -->
+    <style name="me_text" parent="@style/wrap_content_height">
+        <item name="android:drawablePadding">@dimen/padding_10</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/padding_10</item>
+        <item name="android:textColor">@color/gray_6</item>
+        <item name="android:textSize">@dimen/text_15</item>
+    </style>
+
+    <!-- 登陆注册页面布局 -->
+    <style name="login_regist_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">30dip</item>
+        <item name="android:layout_marginLeft">20dip</item>
+        <item name="android:layout_marginRight">20dip</item>
+    </style>
+
+    <!-- 登录布局 -->
+    <style name="login_text">
+        <item name="android:layout_width">240dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/login_input</item>
+        <item name="android:drawablePadding">10dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/gray_6</item>
+        <item name="android:textColorHint">@color/gray_6</item>
+        <item name="android:textSize">15.0dip</item>
+    </style>
+
+
+    <!-- 文本输入框 -->
+    <style name="login_name_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/gray_9</item>
+        <item name="android:textColorHint">@color/gray_9</item>
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:paddingLeft">@dimen/padding_20</item>
+        <item name="android:paddingRight">@dimen/padding_20</item>
+    </style>
+    <!-- 密码输入框 -->
+    <style name="login_psw_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/gray_9</item>
+        <item name="android:textColorHint">@color/gray_9</item>
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:paddingLeft">@dimen/padding_20</item>
+        <item name="android:paddingRight">@dimen/padding_20</item>
+    </style>
+    <!-- 按钮 -->
+    <style name="login_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/gray_ef</item>
+        <item name="android:textColorHint">@color/gray_ef</item>
+        <item name="android:textSize">@dimen/text_17</item>
+        <item name="android:layout_marginTop">24dip</item>
+    </style>
+    <!-- 全部填充 -->
+    <style name="match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!-- 自适应填充 -->
+    <style name="wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- 高度填充 -->
+    <style name="wrap_content_width">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!-- 宽度填充 -->
+    <style name="wrap_content_height">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

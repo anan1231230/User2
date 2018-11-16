@@ -1,0 +1,17 @@
+apply plugin: 'com.android.library'
+
+ext {
+    isLibrary = true
+    pomArtifactId = "WheelPicker"
+    pomDescription = "wheel picker for android, include date picker, time picker, option picker, address picker, etc."
+}
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+}
+
+dependencies {
+    compile project(":library:Common")
+    compile 'com.android.support:support-annotations:24.2.0'
+}

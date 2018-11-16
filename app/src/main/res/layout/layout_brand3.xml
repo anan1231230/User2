@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_above="@+id/ll_showorder_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="相传约在民国初年，山海关西面有名的富商巨贾王家，占据了山海关的“半壁江山”，王老爷口味变得十分挑剔。王家管家发现源中厨子虽多，
+却都不擅长包饺子。无奈只得许以重利广招关中好手。经过一再甄选，最
+终确定了以为王姓老人，人称老王头。
+　　只见这位老王头饺子擀皮独特，包法新颖，造型呈翘角，比起月牙形的饺子更像元宝。不以肉多油大取胜，力求水灵味鲜。饺子的馅分为肉、素、海鲜三大类，不腥不辣，分外水灵有味。精选十几种名贵药材，制成汤料，既增加了饺子的滋补和养生作用，又使馅鲜美而不腥不腻，让人百吃不厌。王老爷食后欣喜异常，老王头饺子的美名也开始闻名遐迩。
+　　如今，老王头饺子的独家配方传承到了他的儿子王国伟的手上。王国伟先生集成了老王头的药膳配方，并在配方的基础上加以改良，使本就闻名遐迩的老王头饺子更加享誉全国。"
+           />
+    </LinearLayout>
+</RelativeLayout>
